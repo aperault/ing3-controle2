@@ -1,0 +1,12 @@
+import java.lang.annotation.*;
+import java.util.ArrayList;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+@Documented
+public  @interface TryAgain {
+
+
+
+    ArrayList<Class> exception();
+}
